@@ -4,19 +4,18 @@ In this Repository you will a Pytorch Extension for an element-wise complex mult
 
 ## Operation
 
-Given
+1. Given
 
-`x`, with shape `(B, C, H, W)`; and
-`h`, with shape `(B, F, H, W)`
+- `x`, with shape `(B, C, H, W)`; and
+- `h`, with shape `(B, F, H, W)`
 
-This multiplication operation consists in, first, expanding 
 
-`x` to `(B, 1, C, H, W)`; and
-`h` to `(B, F, 1, H, W)`.
+2. This multiplication operation consists in, first, expanding 
+- `x` to `(B, 1, C, H, W)`; and
+- `h` to `(B, F, 1, H, W)`.
 
-Then, the element-wise complex multiplication is done, and the dimension 2 is accumulated (`.sum(2)`). Thus, resulting in
-
-`output`, with shape `(B, F, H, W)`.
+3. Then, the element-wise complex multiplication is done, and the dimension 2 is accumulated (`.sum(2)`). Thus, resulting in
+- `output`, with shape `(B, F, H, W)`.
 
 # Files
 
